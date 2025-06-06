@@ -1,8 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@impurt url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
 @import "tailwindcss";
 
 @theme {
   --color-primary: #ffa3f3;
   --font-main: "Work Sans";
+  --font-secondary: "Crimson Text";
   --color-background: #74c69d;
+}
+
+h2 {
+  @apply text-[16px] tracking-[5px];
+}
+
+h1 {
+  @apply text-[28px] font-bold font-secondary;
+}
+
+button {
+  @apply rounded-sm w-[170px] h-[48px] text-2xl transition-all duration-300 ease-in-out transform hover:bg-blue-600 hover:text-white hover:scale-105 shadow hover:shadow-lg;
 }
